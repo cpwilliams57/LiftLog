@@ -2,7 +2,7 @@
 //  Creator:    Cody Williams
 //  Date:       2020-01-07
 //  File:       Lift.h
-//  Notes:      
+//  Notes:      Code for class Lift
 //******************************************************************
 
 #ifndef Lift_h
@@ -62,6 +62,7 @@ public:
     
     /* Functions for class Lift defined in Lift.cpp */
     void add_set(int weight, int reps);
+    void remove_set(int index);
     void show_lift_info();
     void show_all_sets();
 };
