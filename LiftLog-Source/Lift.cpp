@@ -25,9 +25,13 @@ void Lift::add_set(int weight, int reps){
     set_previous_set();
 }
 //******************************************************************
+
+//******************************************************************
+/* Remove a set from the set list*/
 void Lift::remove_set(int index){
-    
+    this->set_list.erase(set_list.begin() + index);
 }
+//******************************************************************
 
 //******************************************************************
 /* Prints info from all sets in the set_list*/

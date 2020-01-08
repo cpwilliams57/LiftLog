@@ -29,7 +29,7 @@ public:
     /* Add a new lift to the lift list for the group */
     void add_lift(std::string lift_name){
         Lift newlift = Lift(lift_name);
-        lift_list.push_back(newlift);
+        this->lift_list.push_back(newlift);
     }
     
     /* lists all the lifts contained in the group */
@@ -39,8 +39,16 @@ public:
             this->lift_list[i].get_lift_name() << std::endl;
     }
     
-    //remove lift function
-    //select lift function
+    /* removes a lift from the lift_list */
+    void remove_lift(int index){
+         this->lift_list.erase(lift_list.begin() + index);
+    }
+    
+    /* Prints the lift info for the selected lift... may need to
+     include some additional functionality...we'll see*/
+    void select_lift(int index){
+        this->lift_list[index].show_lift_info();
+    }
 };
 
 #endif 

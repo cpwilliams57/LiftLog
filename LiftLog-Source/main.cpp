@@ -6,27 +6,7 @@
 //******************************************************************
 
 #include <iostream>
-#include "Lift_group.h"
-
-/* global variables */
-std::vector<Lift_group> group_list;
-
-//add group function
-void add_group(std::string in_name){
-    Lift_group newgroup = Lift_group(in_name);
-    group_list.push_back(newgroup);
-}
-//remove group function
-//select group function
-
-//show group function
-void show_all_groups(){
-    std::cout << "Your lift groupings" << std::endl;
-    for(int i = 0; i < group_list.size(); i++){
-        std::cout << i << ": " << group_list[i].get_group_name() << std::endl;
-    }
-}
-
+#include "func.h"
 
 //******************************************************************
 int main(int argc, const char * argv[]) {
@@ -58,23 +38,54 @@ int main(int argc, const char * argv[]) {
     Lift lift2 = Lift("lift2");
     lift2.add_set(33, 5);
     lift2.add_set(44, 5);
-    lift2.add_set(33, 5);
+    lift2.add_set(12, 5);
     lift2.add_set(67, 6);
     
+//    lift2.show_all_sets();
+//
+//    lift2.remove_set(2);
+//
+//    lift2.show_all_sets();
+    
+
+
     Lift_group group1 = Lift_group("group1");
     group1.add_lift("bench");
     group1.add_lift("squat");
-    //group1.show_all_lifts();
-    
-    Lift_group group2 = Lift_group("group2");
+    group1.add_lift("dead");
     group1.add_lift("clean");
     group1.add_lift("press");
     
+//    group1.show_all_lifts();
+//
+//    group1.select_lift(2);
+    
+    //group1.remove_lift(2);
+    //group1.show_all_lifts();
+    
+    
+
+//
+//    Lift_group group2 = Lift_group("group2");
+//    group1.add_lift("clean");
+//    group1.add_lift("press");
+//
     add_group("group1");
     add_group("group2");
-
+    add_group("group3");
+    add_group("group4");
     
     show_all_groups();
+    
+    remove_group(2);
+     show_all_groups();
+    
+       
+       
+    
+
+    
+    //show_all_groups();
     
     
    // lift1.show_lift_info();

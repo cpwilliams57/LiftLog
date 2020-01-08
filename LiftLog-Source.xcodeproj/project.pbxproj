@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		19E624A823C5091300E92FBC /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 19E624A723C5091300E92FBC /* main.cpp */; };
 		19E624B023C50B4E00E92FBC /* Lift.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 19E624AE23C50B4E00E92FBC /* Lift.cpp */; };
+		19E624BE23C558F700E92FBC /* func.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 19E624BC23C558F700E92FBC /* func.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +30,8 @@
 		19E624AE23C50B4E00E92FBC /* Lift.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Lift.cpp; sourceTree = "<group>"; };
 		19E624AF23C50B4E00E92FBC /* Lift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Lift.h; sourceTree = "<group>"; };
 		19E624B123C5228600E92FBC /* Lift_group.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Lift_group.h; sourceTree = "<group>"; };
+		19E624BC23C558F700E92FBC /* func.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = func.cpp; sourceTree = "<group>"; };
+		19E624BD23C558F700E92FBC /* func.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = func.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +68,8 @@
 				19E624B123C5228600E92FBC /* Lift_group.h */,
 				19E624AE23C50B4E00E92FBC /* Lift.cpp */,
 				19E624AF23C50B4E00E92FBC /* Lift.h */,
+				19E624BC23C558F700E92FBC /* func.cpp */,
+				19E624BD23C558F700E92FBC /* func.h */,
 			);
 			path = "LiftLog-Source";
 			sourceTree = "<group>";
@@ -128,6 +133,7 @@
 			files = (
 				19E624B023C50B4E00E92FBC /* Lift.cpp in Sources */,
 				19E624A823C5091300E92FBC /* main.cpp in Sources */,
+				19E624BE23C558F700E92FBC /* func.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
