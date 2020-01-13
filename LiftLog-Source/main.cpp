@@ -56,6 +56,8 @@ int main(int argc, const char * argv[]) {
     group1.add_lift("clean");
     group1.add_lift("press");
     
+
+    
 //    group1.show_all_lifts();
 //
 //    group1.select_lift(2);
@@ -77,8 +79,10 @@ int main(int argc, const char * argv[]) {
     
     show_all_groups();
     
-    remove_group(2);
-     show_all_groups();
+    select_group(2);
+    
+//    remove_group(2);
+//    show_all_groups();
     
        
        
